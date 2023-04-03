@@ -7,7 +7,8 @@ def sqrt_simplify(num):
     """simplifies a square root from a given number from inside the radical"""
     
     # first checks if the number is a perfect square and returns the perfect square
-    if math.sqrt(num).is_integer(): return int(math.sqrt(num))
+    if math.sqrt(num).is_integer(): 
+        return int(math.sqrt(num))
     
     for i in range(2, num):
         div, mod = divmod(num, i*i)
