@@ -43,11 +43,9 @@ def root(index, radicand):
         
         if mod == 0:
             n1, n2 = root(index, div)
-            # return (i * n1, n2)
             return (i * n1, n2)
         if div == 0:
             break
-    # return "can't be simplified"
     return (1, radicand)
     
 def simplifyRoot():
@@ -58,7 +56,6 @@ def simplifyRoot():
     if isinstance(result, int):
         print(result)
     else:
-        print(f"{result[0]} times {index} root of {result[1]}")
-    # print(root(index, radicand))
+        print(f"{result[0]} times {index} root of {int(result[1])}")
 
 simplifyRoot()
